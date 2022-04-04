@@ -1,6 +1,6 @@
 <template>
   <el-carousel arrow="never" :height="height" :autoplay="true">
-    <el-carousel-item v-for="item in 3" :key="item">
+    <el-carousel-item v-for="item in 1" :key="item">
       <div class="carousel-background" style="background-image: url('/src/assets/img/2.jpg')">
         <div class="carousel-background-mask">
           <div class="carousel-background-content">
@@ -42,13 +42,15 @@ export default {
 
 .carousel-background {
   height: 100%;
-  background-size: cover;
+  width: 100%;
+  background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
   transition: all 0.4s;
+  transform: scale(1.05);
 
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
   }
 
   .carousel-background-mask {

@@ -58,7 +58,6 @@ const router = createRouter({
     history: createWebHashHistory(),
     scrollBehavior(to, from, savedPosition) {
         if (savedPosition) {
-            console.log("test")
             return savedPosition
         }
         return {
